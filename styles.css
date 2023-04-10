@@ -1,0 +1,95 @@
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary: #067b8c;
+  --black: #51586a;
+}
+
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100px;
+}
+
+header {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+}
+
+header li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  background: var(--primary);
+  height: 45px;
+  border-radius: 10px;
+  text-align: center;
+  margin-right: 16px;
+}
+
+header li:nth-child(2) {
+  background: none;
+  width: initial;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+header li:nth-child(2) > a {
+  color: var(--black);
+}
+
+.hero-bg {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-170px);
+}
+h1 {
+  font-size: 63px;
+  max-width: 460px;
+}
+.hero .content {
+  display: flex;
+  align-items: center;
+}
+.hero .app-img {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .hero .content {
+    flex-direction: column;
+  }
+  .hero .app-img {
+    width: 100%;
+  }
+  .hero-bg {
+    display: none;
+  }
+  header ul {
+    display: none;
+  }
+}
